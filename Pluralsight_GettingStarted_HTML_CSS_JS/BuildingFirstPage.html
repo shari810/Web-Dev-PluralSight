@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1,h2{
+                background-color: purple;
+                color: white;
+                background-position: center;
+                text-align: center;
+                display: inline-block;
+                width: 500px;
+            }
+            body {
+                background-color: pink;
+            }
+            .tutorial {
+                border: solid 4px #1e7925;
+            }
+            <!--selector-->
+            #tutorial-1 > p{
+                background-color: #a1d11c;
+                font-size: 2em;
+            }
+            #tutorial-2 {
+                background-color: aqua;
+            }
+            img[src="data:image/png;base64,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"] {
+                border: solid 3px aqua;
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            img[src="https://media2.giphy.com/media/kXHTt434IuZZvjrE3l/200w.gif?cid=82a1493b6fuynxs7bst500yjhyj28v8ttt1lwv0sfrzhy2li&rid=200w.gif&ct=g"] {
+                border: solid 5px #a1d11c;
+                width: auto;
+                height: auto;
+                display: block;
+                position: relative;
+                left: 42.5%;
+            }
+            #container1 {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 50%;
+                border: solid 4px #1e7925;
+            }
+            #youtube1 {
+                position: absolute;
+                top: 12%;
+                left: 0;
+                width: 100%;
+                height: 88.5%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Introduction</h1>
+        <h1>to</h1>
+        <h1>CSS</h1>
+        <p style = "color: rgb(4, 163, 44);">These tutorials teach you CSS.</p>
+        <div class="tutorial" id="tutorial-1">
+            <h2>Tutorial 1</h2>
+            <img src="data:image/png;base64,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">
+            <p>To begin with tutorial 1...</p>
+        </div>
+        <div class="tutorial" id="tutorial-2" >
+            <h2>Tutorial 2</h2>
+            <img src="https://media2.giphy.com/media/kXHTt434IuZZvjrE3l/200w.gif?cid=82a1493b6fuynxs7bst500yjhyj28v8ttt1lwv0sfrzhy2li&rid=200w.gif&ct=g">
+            <p>To begin with tutorial 2...</p>
+        </div>
+        <div class="container" id="container1">
+            <h2 align="center">Recycle</h2>
+            <iframe src="https://www.youtube.com/embed/ITE5jTFr3ZY?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" class="video" id="youtube1"></iframe>
+        </div>
+    </body>
+</html>
+
+
+
+
+<!--Creating adaptive Youtube video size-->
+<!--https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube-iframe-embed-->
