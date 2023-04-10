@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Object Literals</title>
+</head>
+<body>
+    <script>
+        let firstName = "Nick";
+        let lastName =  "Shari";
+        let linkedIn = "https://www.linkedin.com/in/nicholas-shari/";
+
+        let person = {
+            firstName: "Nick",
+            lastName: "Shari",
+            linkedIn: "https://www.linkedin.com/in/nicholas-shari/",
+
+            greet: function() {
+                console.log("My name is " + this.firstName);
+            }
+        };
+
+        console.log(person)
+        console.log(person.firstName)
+        console.log(person.lastName)
+        console.log(person.linkedIn)
+        
+        person.greet();
+    </script>
+</body>
+</html>
