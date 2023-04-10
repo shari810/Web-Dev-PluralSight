@@ -5,6 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css" type="text/css" />
+    <!-- 
+        font-weight:600         Makes the text bold.
+        input[type="reset"]     Will only affect the reset button.
+        input[type="submit"]    Will only affect the submit button.
+    -->
+    <style>
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            padding: 10px;
+            border: solid 1px #999;
+            border-radius: 2px;
+            width: 50%;
+        }
+
+        label {
+            font-weight: 600;  
+        }
+
+        input[type="reset"] {
+            background: transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            border: solid 1px #999;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+    </style>
     <title>Orders | Bethany's Pie Shop</title>
     <style>
 
