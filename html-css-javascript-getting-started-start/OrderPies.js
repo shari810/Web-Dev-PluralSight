@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function(e) {      //ensure the enti
             // create a url by replacing part of the original with the desired destination
             const url = window.location.href.replace("pies.html", "order.html");
             // set the new url and have the window direct to a new page
-            windows.location.href = url;
+            window.location.href = url;
 
 
         });
