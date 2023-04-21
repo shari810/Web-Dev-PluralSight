@@ -126,3 +126,21 @@ textarea {              /*only affects textarea box*/
     border-radius: 7px; /*rounds the border edges*/
 }
 
+/*The browser knows when something is valid or invalid*/
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/*We don't want the box to display red while someone is trying to fix it.*/
+input:focus:invalid {
+    border-color: black;
+}
+
+input:required,
+textarea {
+    border-style: dashed;
+}
