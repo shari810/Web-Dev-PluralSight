@@ -40,8 +40,13 @@
            <h1>Contact Us</h1>
            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
                 Your name: <br> <input type="text" name="customerName" id=""> <br>
+                Your email: <br> <input type="email" name="customerEmail" id=""> <br>
+                Your phone: <br> <input type="tel" name="customerTel" id=""> <br>
                 <input type="hidden" name="source" value="ContactForm">
                 Your Feedback: <br><textarea name="feedbackText" id="" cols="40" rows="10"></textarea> <br>
+                Severity: <input type="number" min="1" max="10" name="customerSeverity" id=""> <br>
+                Issue Date: <br> <input type="date" name="issueDate" id=""> <br>
+                Issue Time: <br> <input type="time" name="issueTime" id=""> <br>
                 <input type="submit" value="SendContact">
            </form>
            
@@ -58,3 +63,10 @@
 </body>
 
 </html>
+
+<!--
+
+    Available inputs
+    Email, url, telephone, number, date, time
+    
+-->
