@@ -43,14 +43,16 @@
                     <legend>Contact Information</legend>
                     <p>
                         <label for="nameField">Your name: </label>
-                        <input id="nameField" type="text" name="customerName">
+                        <!-- added min/max length requirement // form will not send until satisfied -->
+                        <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
                     </p>
                     <p>
                         <label for="customerEmail">Your email: </label>
                         <input type="email" name="customerEmail" id="customerEmail">
                     </p>
                     <p><label for="customerPhone">Your phone: </label>
-                        <input type="tel" name="customerPhone" id="customerPhone"></p>
+                        <!-- escape character \  (3digits) 3 digits - 4 digits   Only accepts: (987) 654-3210   -->
+                        <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
                     <p>
                         <label>Phone type: </label>
                     </p>
@@ -69,8 +71,8 @@
                 <input type="hidden" name="source" value="ContactForm">
                 <fieldset>
                     <legend>Feedback</legend>
-                    <p>
-                        <textarea tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+                    <p> <!-- added min/max length requirement // form will not send until satisfied -->
+                        <textarea required minlength="10" maxlength="200" tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
                     </p>
                     <p>
                         <label for="feedbackType">Feedback type: </label><select tabindex="2" name="feedbackType"
