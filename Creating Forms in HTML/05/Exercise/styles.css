@@ -105,3 +105,24 @@ footer {
     width:180px;
     padding-right:10px;
 }
+
+fieldset {
+    border-color: #a593c3;
+    border-width: 3px;
+    border-style: solid;
+}
+/*color only changes text color */
+fieldset>legend {
+    color: #a593c2;
+}
+/* labels are normally in-line displays */
+p>label {
+    display: block;
+}
+
+input[type="email"],  /*only affects email*/
+input[type="tel"],    /*only affects phones*/
+textarea {              /*only affects textarea box*/
+    border-radius: 7px; /*rounds the border edges*/
+}
+
