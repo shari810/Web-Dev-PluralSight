@@ -42,6 +42,17 @@
                 Your name: <br> <input type="text" name="customerName" id=""> <br>
                 Your email: <br> <input type="email" name="customerEmail" id=""> <br>
                 Your phone: <br> <input type="tel" name="customerTel" id=""> <br>
+                <!-- Radio buttons cannot be unselected 
+                        If the names are the, it will deselect the other one.-->
+                <input type="radio" name="phoneType" value="cell" id=""> cell
+                <input type="radio" name="phoneType" value="work" id=""> work
+                <input type="radio" name="phoneType" value="home" id=""> home
+            <br>
+                Okay to contact me:
+                <input type="checkbox" name="okToContact" value="phone"> by phone
+                <input type="checkbox" name="okToContact" value="email"> by email
+                <br>
+
                 <input type="hidden" name="source" value="ContactForm">
                 Your Feedback: <br><textarea name="feedbackText" id="" cols="40" rows="10"></textarea> <br>
                 Feedback Type: <select name="feedbackType" multiple="multiple" size="6" id="">
@@ -80,5 +91,6 @@
     Available inputs
     Email, url, telephone, number, date, time
     Range - creates a slider
+
 
 -->
